@@ -1,66 +1,66 @@
 const expect = require('chai').expect;
 
-const ie = require('../index');
+const even = require('../index');
 
 
 describe('#isEven', function() {
 	it('should return true', function() {
-		const result = ie.isEven(2);
+		const result = even(2);
 		expect(result).to.be.true;
 	});
 
 	it('should return true', function() {
-		const result = ie.isEven(120000);
+		const result = even(120000);
 		expect(result).to.be.true;
 	});
 
 	it('should return true', function() {
-		const result = ie.isEven(5e10);
+		const result = even(5e10);
 		expect(result).to.be.true;
 	});
 
 	it('should return true', function() {
-		const result = ie.isEven(-2);
+		const result = even(-2);
 		expect(result).to.be.true;
 	});
 
 	it('should return true', function() {
-		const result = ie.isEven(-450);
+		const result = even(-450);
 		expect(result).to.be.true;
 	});
 
 	it('should return true', function() {
-		const result = ie.isEven(-7e3);
+		const result = even(-7e3);
 		expect(result).to.be.true;
 	});
 
 	it('should return false', function() {
-		const result = ie.isEven(Number.POSITIVE_INFINITY);
+		const result = even(Number.POSITIVE_INFINITY);
 		expect(result).to.be.false;
 	});
 
 	it('should return false', function() {
-		const result = ie.isEven(Number.NEGATIVE_INFINITY);
+		const result = even(Number.NEGATIVE_INFINITY);
 		expect(result).to.be.false;
 	});
 
 	it('should return false', function() {
-		const result = ie.isEven(NaN);
-		expect(result).to.be.false;
-	})
-
-	it('should return false', function() {
-		const result = ie.isEven('string');
+		const result = even(NaN);
 		expect(result).to.be.false;
 	})
 
 	it('should return false', function() {
-		const result = ie.isEven(undefined);
+		const result = even('string');
 		expect(result).to.be.false;
 	})
 
 	it('should return false', function() {
-		const result = ie.isEven(true);
+		const result = even(undefined);
+		expect(result).to.be.false;
+	})
+
+	it('should return false', function() {
+		const result = even(true);
 		expect(result).to.be.false;
 	})
 });

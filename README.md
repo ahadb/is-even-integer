@@ -19,7 +19,7 @@ Simply require the `is-even-integer` module. The export function can be used in 
 ```javascript
 const even = require('is-even-integer');
 
-even.isEven(10); // true
+isEven(10); // true
 
 ```
 
