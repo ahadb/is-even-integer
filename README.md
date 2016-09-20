@@ -42,12 +42,14 @@ isEven(-7e3);   // true
 ```
 
 ###false
+```javascript
 isEven(Number.POSITIVE_INFINITY); // false
 isEven(Number.NEGATIVE_INFINITY); // false
 isEven(NaN);                      // false
 isEven('string');                 // false
 isEven(undefined);                // false
 isEven(true);                     // false
+```
 
 ##Contributing
 
