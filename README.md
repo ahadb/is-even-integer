@@ -33,8 +33,21 @@ even.isEven(10); // true
 
 ###true
 
+```javascript
+isEven(120000); // true
+isEven(5e10);   // true
+isEven(-2);     // true 
+isEven(-450);   // true
+isEven(-7e3);   // true
+```
 
 ###false
+isEven(Number.POSITIVE_INFINITY); // false
+isEven(Number.NEGATIVE_INFINITY); // false
+isEven(NaN);                      // false
+isEven('string');                 // false
+isEven(undefined);                // false
+isEven(true);                     // false
 
 ##Contributing
 
