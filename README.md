@@ -51,6 +51,11 @@ isEven(undefined);                // false
 isEven(true);                     // false
 ```
 
+##Related Modules
+
+* [is-even-integer](https://github.com/ahadb/is-even-integer)
+* [first-of-array](https://github.com/ahadb/first-of-array)
+
 ##Contributing
 
 Feel free to file an issue or bug.
