@@ -53,8 +53,10 @@ isEven(true);                     // false
 
 ##Related Modules
 
-* [is-even-integer](https://github.com/ahadb/is-even-integer)
+* [node-range](https://github.com/ahadb/node-range)
 * [first-of-array](https://github.com/ahadb/first-of-array)
+* [last-of-array](https://github.com/ahadb/last-of-array)
+* [node-camel-case](https://github.com/ahadb/node-camel-case)
 
 ##Contributing
 
