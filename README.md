@@ -27,7 +27,7 @@ isEven(10); // true
 
 * add more tests
 
-##T ests
+## Tests
 
 'npm test'
 
